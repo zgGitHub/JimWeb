@@ -175,7 +175,8 @@ class TagView(ListView):
         return super(TagView,self).get_queryset().filter(tags=tag)
 
 
-
+def about(req):
+    return render_to_response('blog/about.html',{})
 
 
 
